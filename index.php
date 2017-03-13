@@ -17,7 +17,7 @@ define('APP', IMOOC.'/app');
 define('MODULE', '\app');
 define('DEBUG', true);
 
-//include_once IMOOC.'/vendor/autoload.php';
+include_once IMOOC.'/vendor/autoload.php';
 include_once  'vendor/autoload.php';
 
 
@@ -32,8 +32,8 @@ if (DEBUG){
 }
 //2.加载数据库
 
-//include_once CORE.'/common/function.php';
-//include_once CORE.'/main.php';
+include_once CORE.'/common/function.php';
+include_once CORE.'/main.php';
 //3.启动框架
 spl_autoload_register('core\main::load');//若发现么有类就调用此函数
 \core\main::run();
